@@ -16,6 +16,7 @@ command! -bar VaultRead call vault#read()
 
 nnoremap <silent> <Plug>(vault-path-prefix) :<C-u>VaultPathPrefix<CR>
 nnoremap <silent> <Plug>(vault-field) :<C-u>VaultField<CR>
+xnoremap <silent> <Plug>(vault-read) :<C-u>VaultRead<CR>
 nnoremap <silent> <Plug>(vault-read) :<C-u>VaultRead<CR>
 
 if !exists('g:vault_no_default_mapping')
@@ -25,6 +26,7 @@ if !g:vault_no_default_mappings
   nmap <Leader>vpp <Plug>(vault-path-prefix)
   nmap <Leader>vf <Plug>(vault-field)
   nmap <Leader>vr <Plug>(vault-read)
+  xmap <Leader>vr <Plug>(vault-read)
 endif
 
 let &cpo = s:save_cpo
