@@ -1,0 +1,54 @@
+*vault.nvim*			 utilities to operate vault
+
+Author: cappyzawa <cappyzawa@yahoo.ne.jp>
+
+===============================================================================
+CONTENTS						                                      *vault-nvim-contents*
+
+Introduction	......  |vault-nvim-introduction|
+Interface			......  |vault-nvim-interface|
+  Variables		......  |vault-nvim-variables|
+  Commands		......  |vault-nvim-commands|
+  Mappings    ......  |vault-nvim-mappings|
+===============================================================================
+INTRODUCTION                                          *vault-nvim-introduction*
+
+This plugin can operate vault with you editor, vim.
+vault: https://www.vaultproject.io/
+===============================================================================
+INTERFACE				                                         *vault-nvim-interface*
+===============================================================================
+-------------------------------------------------------------------------------
+VARIABLES					                                       *vault-nvim-variables*
+*g:vault_no_default_mapping*
+   (Default: v:false)
+   If this variable is set to v:true, you can disable default key mapping.
+-------------------------------------------------------------------------------
+COMMANDS					                                        *vault-nvim-commands*
+*:VaultPathPrefix*
+  default: ''.
+  Path under which to namespace credential lookup.
+  if you set `/foo` to path prefix, and you select `bar` in editor, you can
+    read select `/foo/bar`.
+*:VaultField*
+  default: 'value'.
+  The field with the given name.
+  If you wrote secret by below command, field is `value`.
+  `vault write /foo/bar value=foobar`
+
+*:VaultRead*
+  This command reads `<path_prefix>/<selected_string>`.
+  if you set `/foo` to path prefix, and you select `bar` in editor, you can
+    read select `/foo/bar`.
+
+*:VaultWrite* (TBD: comming soon?)
+-------------------------------------------------------------------------------
+MAPPINGS					                                        *vault-nvim-mappings*
+*<Leader>vpp*
+  VaultPathPrefix
+*<Leader>vf*
+  VaultField
+*<Leader>vr*
+  VaultRead
+*<Leader>vw*
+  VaultWrite (TBD)
