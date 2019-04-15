@@ -1,4 +1,7 @@
 # vault.nvim
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Latest: Release](https://img.shields.io/github/release/cappyzawa/vault.nvim.svg)](https://github.com/cappyzawa/vault.nvim/releases)
+
 utilities to operate vault
 
 ## Required
