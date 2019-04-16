@@ -2,10 +2,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Latest: Release](https://img.shields.io/github/release/cappyzawa/vault.nvim.svg)](https://github.com/cappyzawa/vault.nvim/releases)
 
-utilities to operate vault
+Utilities to operate vault.  
+If you use neovim0.4.0+, you can read secrets with floating window.
 
-## Required
-nvim 0.4.0++ or vim 8.0+
 ## Installation
 To install using [Vim-Plug](https://github.com/junegunn/vim-plug):
 ```
