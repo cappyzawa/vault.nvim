@@ -5,6 +5,8 @@
 Utilities to operate vault.  
 If you use neovim0.4.0+, you can read secrets with floating window.
 
+[![ss](https://raw.githubusercontent.com/cappyzawa/demo/master/vault.nvim/demo.gif)](.)
+
 ## Installation
 To install using [Vim-Plug](https://github.com/junegunn/vim-plug):
 ```
