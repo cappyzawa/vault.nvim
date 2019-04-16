@@ -5,7 +5,7 @@
 utilities to operate vault
 
 ## Required
-* nvim 0.4.0++
+nvim 0.4.0++ or vim 8.0+
 ## Installation
 To install using [Vim-Plug](https://github.com/junegunn/vim-plug):
 ```
@@ -32,5 +32,4 @@ If `g:vault_no_default_mappings` is not set to `v:true`, this plugin also define
 `VaultRead` reads the secret of the selected string and displays it in the popup window.(xmap) 
 
 When popup is open, execute `VaultRead` to close it.(nmap)
-
 
