@@ -65,7 +65,11 @@ function! s:popup.close() abort
     call nvim_win_close(l:self.window, 1)
   else
     let l:self.window = win_id2win(l:self.window_id)
-    execute l:self.window . 'wincmd c'
+    try
+      execute l:self.window . 'wincmd c'
+    catch
+      return
+    endtry
   endif
   unlet l:self.window
 endfunction
