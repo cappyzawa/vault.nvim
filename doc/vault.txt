@@ -21,14 +21,26 @@ INTERFACE				                                         *vault-nvim-interface*
 -------------------------------------------------------------------------------
 VARIABLES					                                       *vault-nvim-variables*
 *g:vault_no_default_mapping*
-   (Default: v:false)
-   If this variable is set to v:true, you can disable default key mapping.
+  default: 0
+  If this variable is set to v:true, you can disable default key mapping.
+
+*g:vault_default_path_prefix*
+  default: ''
+  Path under which to namespace credential lookup.
+  If you set `/foo` to this variable, and you select `bar` in editor, you can
+    read select `/foo/bar`.
+
+*g:vault_default_field*
+  default: 'value'
+  If you wrote secret by below command, field is `value`.
+  `vault write /foo/bar value=foobar`
+
 -------------------------------------------------------------------------------
 COMMANDS					                                        *vault-nvim-commands*
 *:VaultPathPrefix*
   default: ''.
   Path under which to namespace credential lookup.
-  if you set `/foo` to path prefix, and you select `bar` in editor, you can
+  If you set `/foo` to path prefix, and you select `bar` in editor, you can
     read select `/foo/bar`.
 *:VaultField*
   default: 'value'.

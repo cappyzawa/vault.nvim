@@ -19,6 +19,14 @@ nnoremap <silent> <Plug>(vault-field) :<C-u>VaultField<CR>
 xnoremap <silent> <Plug>(vault-read) :<C-u>VaultRead<CR>
 nnoremap <silent> <Plug>(vault-read) :<C-u>VaultRead<CR>
 
+if !exists('g:vault_default_path_prefix')
+  let g:vault_default_path_prefix = ''
+endif
+
+if !exists('g:vault_default_field')
+  let g:vault_default_field = 'value'
+endif
+
 if !exists('g:vault_no_default_mapping')
   let g:vault_no_default_mappings = v:false
 endif

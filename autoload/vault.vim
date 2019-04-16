@@ -4,8 +4,8 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 let s:vault = {
-      \ 'path_prefix': '',
-      \ 'field': 'value',
+      \ 'path_prefix': g:vault_default_path_prefix,
+      \ 'field': g:vault_default_field,
       \ }
 
 let s:popup_flag = v:false
