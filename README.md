@@ -18,6 +18,12 @@ Plug 'cappyzawa/vault.nvim'
 |VaultField|set your secret's field. default:`value`.|
 |VaultRead|`vault read -field <field> <path_prefix>/<selected string>`|
 
+In order to execute `VaultRead`, it is necessary to be able to communicate with vault api.
+```bash
+$ export VAULT_ADDR=https://your.vault.com
+$ export VAULT_TOKEN=XXXXXXXXXX
+```
+
 ## Key mappings
 If `g:vault_no_default_mappings` is not set to `v:true`, this plugin also defines following default mapping.
 

@@ -52,6 +52,9 @@ COMMANDS					                                        *vault-nvim-commands*
   This command reads `<path_prefix>/<selected_string>`.
   if you set `/foo` to path prefix, and you select `bar` in editor, you can
     read select `/foo/bar`.
+  In order to execute `VaultRead`, it is necessary to be able to communicate
+  with vault api. 
+  Please set `VAULT_ADDR` and `VAULT_TOKEN` to environment variabels.
 
 *:VaultWrite* (TBD: comming soon?)
 -------------------------------------------------------------------------------
